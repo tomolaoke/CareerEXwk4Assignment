@@ -1,7 +1,7 @@
 // 1. Function to check if the score is 180 and above (JAMB-style)
 function checkScore(score) {
     if (score >= 180) {
-        console.log("Passed JAMB exam");
+        console.log("You Scored " + score + " Passed JAMB exam");
     } else {
         console.log("You Scored " + score + " Failed JAMB exam");
     }
@@ -109,9 +109,9 @@ console.log(canSignUp("tommola.oke@gmail.com", "")); // Example usage
 function validateCredentials(username, password) {
     return username === "" || password === "" ? "Invalid input" : "Valid input";
 }
-console.log(validateCredentials("JohnDoe", "")); // Example usage
+console.log(validateCredentials("tomolaoke", "")); // Example usage for Invalid input
 // console.log(validateCredentials("", "password123")); // comment Example for Invalid input
-// console.log(validateCredentials("JaneDoe", "password123")); // comment Example for Valid input
+// console.log(validateCredentials("tomolaoke", "password123456")); // comment Example for Valid input
 
 
 
@@ -124,9 +124,14 @@ function checkHoursWorked(hours) {
     // Uses ternary operator for decision making
     return hours >= 40 ? "Full-time" : "Part-time";
 }
-console.log(checkHoursWorked(35)); // Example usage
+console.log(checkHoursWorked(35)); // Example usage for Part-time
+// console.log(checkHoursWorked(45)); // comment Example for Full-time
+// console.log(checkHoursWorked(20)); // comment Example for Part-time
+
 
 // 10. Arrow function to return the larger of two numbers
 const getLargerNumber = (num1, num2) => (num1 > num2 ? num1 : num2);
 
-console.log(getLargerNumber(10, 20)); // Example usage
+console.log(getLargerNumber(10, 20)); // Example usage for 20
+// console.log(getLargerNumber(30, 25)); // comment Example for 30
+// console.log(getLargerNumber(5, 5)); // comment Example for 5
